@@ -1,0 +1,106 @@
+body {
+    background-color: hsl(47, 88%, 63%);
+    font-family: "Figtree", sans-serif;
+}
+
+a {
+    font-weight: 800;
+    font-size: 24px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    /* margin-left: 20px; */
+}
+
+a:hover {
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+
+main {
+    background-color: white;
+    font-size: 14px;
+    border: 1.5px solid hsl(0, 0%, 7%);
+    border-radius: 15px;
+    box-shadow: 10px 10px hsl(0, 0%, 7%);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 500px;
+    width: 375px;
+    margin: 200px auto;
+}
+
+section {
+    max-width: 315px;
+}
+
+p {
+    color: hsl(0, 0%, 42%);
+    display: flex;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+#cardIcon {
+    max-width: 315px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 25px 0;
+}
+
+#button {
+    background-color: hsl(47, 88%, 63%);
+    display: block;
+    text-align: center;
+    width: 20%;
+    font-weight: 800;
+    padding: 5px;
+    border-radius: 5px;
+    /* margin-left: 20px; */
+}
+
+#date {
+    margin: 15px 0;
+}
+
+#name {
+    font-weight: 800;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#author {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin: 10px 0;
+}
+
+#avatar {
+    height: 35px;
+    display: inline;
+}
+
+@media (max-width: 400px) {
+    main {
+        width: 325px;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+    section,
+    #cardIcon {
+        width: 275px;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+}
